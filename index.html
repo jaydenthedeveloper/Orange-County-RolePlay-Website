@@ -4,31 +4,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>OCRP | Home</title>
+
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" href="/Orange-County-RolePlay-Website/images/ocrp.png">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 900,
-    once: true
-  });
-</script>
+
 <body>
+
+  <!-- AOS INIT -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 900,
+      once: true
+    });
+  </script>
 
   <!-- NAVBAR -->
   <nav class="navbar">
     <div class="nav-logo">Orange County RolePlay</div>
-<ul class="nav-links">
-  <li><a href="/Orange-County-RolePlay-Website/index.html">Home</a></li>
-  <li><a href="about.html">About</a></li>
-  <li><a href="departments.html">Departments</a></li>
-  <li><a href="applications.html">Applications</a></li>
-  <li><a href="roblox://placeId=2534724415&launchData=%7B%22psCode%22%3A%22OrangeFL%22%7D" target="_blank">Join Game</a></li>
-  <li><a href="https://discord.gg/6qHNKswAQY" target="_blank">Join Discord</a></li>
-</ul>
+    <ul class="nav-links">
+      <li><a href="/Orange-County-RolePlay-Website/index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="departments.html">Departments</a></li>
+      <li><a href="applications.html">Applications</a></li>
+      <li><a href="roblox://placeId=2534724415&launchData=%7B%22psCode%22%3A%22OrangeFL%22%7D" target="_blank">Join Game</a></li>
+      <li><a href="https://discord.gg/6qHNKswAQY" target="_blank">Join Discord</a></li>
+    </ul>
   </nav>
 
   <!-- HERO -->
@@ -57,6 +61,7 @@
       </p>
 
       <div class="feature-grid">
+
         <div class="feature-card">
           <h3>Professional LEO</h3>
           <p class="feature-summary">Realistic law enforcement with proper procedures.</p>
@@ -80,76 +85,62 @@
           <p class="feature-summary">Exclusive access via applications.</p>
           <p class="feature-detail">Join vetted teams like FHP, OPD, OCFR, and FDOT through a professional onboarding process.</p>
         </div>
-        <div class="feature-card">
-  <h3>Active Community</h3>
-  <p class="feature-summary">Always something happening</p>
-  <p class="feature-detail">
-    OCRP has a consistently active player base, daily patrols, and frequent events that keep the world alive and engaging.
-  </p>
-</div>
 
-<div class="feature-card">
-  <h3>Professional Staff Team</h3>
-  <p class="feature-summary">Fair, trained, and responsive</p>
-  <p class="feature-detail">
-    Our staff team is dedicated to maintaining a realistic, respectful, and enjoyable environment for every member.
-  </p>
-</div>
+        <div class="feature-card">
+          <h3>Active Community</h3>
+          <p class="feature-summary">Always something happening</p>
+          <p class="feature-detail">
+            OCRP has a consistently active player base, daily patrols, and frequent events that keep the world alive and engaging.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Professional Staff Team</h3>
+          <p class="feature-summary">Fair, trained, and responsive</p>
+          <p class="feature-detail">
+            Our staff team is dedicated to maintaining a realistic, respectful, and enjoyable environment for every member.
+          </p>
+        </div>
+
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-content">
-    <p>© 2026 Orange County Roleplay</p>
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© 2026 Orange County Roleplay</p>
 
-    <div style="display:flex; gap:14px; align-items:center;">
-      <a href="https://discord.gg/6qHNKswAQY" target="_blank">
-        <img src="images/discord-white.png" class="discord-icon" alt="Discord" />
-      </a>
+      <div style="display:flex; gap:14px; align-items:center;">
+        <a href="https://discord.gg/6qHNKswAQY" target="_blank">
+          <img src="images/discord-white.png" class="discord-icon" alt="Discord" />
+        </a>
 
-      <a href="https://www.roblox.com/share/g/1030805704" target="_blank">
-        <img src="images/roblox-orange.png" class="discord-icon" alt="Roblox" />
-      </a>
-    </div>
+        <a href="https://www.roblox.com/share/g/1030805704" target="_blank">
+          <img src="images/roblox-orange.png" class="discord-icon" alt="Roblox" />
+        </a>
+      </div>
 
-  </div>
-</footer>
     </div>
   </footer>
-<script>
-  document.body.classList.add('fade-in');
 
-  document.querySelectorAll('a').forEach(link => {
-    const url = link.getAttribute('href');
-    if (!url || url.startsWith('#') || link.target === "_blank") return;
+  <!-- PAGE TRANSITION SCRIPT -->
+  <script>
+    document.body.classList.add('fade-in');
 
-    link.addEventListener('click', e => {
-      e.preventDefault();
-      document.body.style.opacity = 0;
-      setTimeout(() => {
-        window.location.href = url;
-      }, 200);
+    document.querySelectorAll('a').forEach(link => {
+      const url = link.getAttribute('href');
+      if (!url || url.startsWith('#') || link.target === "_blank") return;
+
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        document.body.style.opacity = 0;
+        setTimeout(() => {
+          window.location.href = url;
+        }, 200);
+      });
     });
-  });
-</script>
+  </script>
+
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
