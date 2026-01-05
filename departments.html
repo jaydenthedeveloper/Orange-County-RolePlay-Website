@@ -26,94 +26,79 @@
   </nav>
 
   <!-- DEPARTMENTS GRID -->
-  <section class="departments">
-    <div class="container">
-      <h2>Our Departments</h2>
-      <p class="section-subtitle">Choose Your Path</p>
+<section class="about-split">
+  <div class="container">
 
-      <div class="dept-grid">
-
-        <!-- FHP -->
-        <div class="dept-card">
-          <img src="images/fhp.png" alt="FHP Vehicle" class="dept-img">
-          <h3>Florida Highway Patrol (FHP)</h3>
-          <p class="dept-text">
-            Enforce traffic laws, conduct traffic stops, and patrol Florida’s highways with professionalism and precision.
-          </p>
-          <a href="https://discord.gg/6qHNKswAQY" target="_blank" class="btn-primary dept-btn">Join FHP</a>
-        </div>
-
-        <!-- OPD -->
-        <div class="dept-card">
-          <img src="images/opd.png" alt="OPD Vehicle" class="dept-img">
-          <h3>Orlando Police Department (OPD)</h3>
-          <p class="dept-text">
-            Protect and serve the City of Orlando with urban patrols, investigations, and rapid response operations.
-          </p>
-          <a href="https://discord.gg/6qHNKswAQY" target="_blank" class="btn-primary dept-btn">Join OPD</a>
-        </div>
-
-        <!-- OCSO -->
-        <div class="dept-card">
-          <img src="images/ocso.png" alt="OCSO Vehicle" class="dept-img">
-          <h3>Orange County Sheriff's Office (OCSO)</h3>
-          <p class="dept-text">
-            Serve the residents of Orange County through community policing, countywide patrols, and specialized units.
-          </p>
-          <a href="https://discord.gg/6qHNKswAQY" target="_blank" class="btn-primary dept-btn">Join OCSO</a>
-        </div>
-
-        <!-- OCFR -->
-        <div class="dept-card">
-          <img src="images/ocfr.png" alt="OCFR Vehicle" class="dept-img">
-          <h3>Orange County Fire Rescue (OCFR)</h3>
-          <p class="dept-text">
-            Respond to fires, medical emergencies, and rescue operations with elite training and real‑world accuracy.
-          </p>
-          <a href="https://discord.gg/6qHNKswAQY" target="_blank" class="btn-primary dept-btn">Join OCFR</a>
-        </div>
-
-        <!-- FDOT -->
-        <div class="dept-card">
-          <img src="images/fdot.png" alt="FDOT Vehicle" class="dept-img">
-          <h3>Florida Department of Transportation (FDOT)</h3>
-          <p class="dept-text">
-            Keep Florida’s roads safe with traffic management, incident response, and roadway hazard mitigation.
-          </p>
-          <a href="https://discord.gg/6qHNKswAQY" target="_blank" class="btn-primary dept-btn">Join FDOT</a>
-        </div>
-
+    <!-- FHP -->
+    <div class="split-grid">
+      <div class="split-text">
+        <h2>Florida Highway Patrol (FHP)</h2>
+        <p class="split-body">
+          Enforce traffic laws, conduct traffic stops, and patrol Florida’s highways with professionalism and precision.
+        </p>
+        <a href="https://discord.gg/6qHNKswAQY" target="_blank" class="btn-primary">Join FHP</a>
+      </div>
+      <div class="split-image">
+        <img src="/Orange-County-RolePlay-Website/images/fhp.png" alt="FHP Vehicle">
       </div>
     </div>
-  </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-content">
-      <p>© 2026 Orange County Roleplay</p>
-      <a href="https://discord.gg/6qHNKswAQY" target="_blank">
-        <img src="images/discord-white.png" class="discord-icon" alt="Discord" />
-      </a>
+    <!-- OPD -->
+    <div class="split-grid reverse">
+      <div class="split-text">
+        <h2>Orlando Police Department (OPD)</h2>
+        <p class="split-body">
+          Protect and serve the City of Orlando with urban patrols, investigations, and rapid response operations.
+        </p>
+        <a href="https://discord.gg/6qHNKswAQY" target="_blank" class="btn-primary">Join OPD</a>
+      </div>
+      <div class="split-image">
+        <img src="/Orange-County-RolePlay-Website/images/opd.png" alt="OPD Vehicle">
+      </div>
     </div>
-  </footer>
 
-  <!-- PAGE TRANSITION SCRIPT -->
-  <script>
-    document.body.classList.add('fade-in');
+    <!-- OCSO -->
+    <div class="split-grid">
+      <div class="split-text">
+        <h2>Orange County Sheriff's Office (OCSO)</h2>
+        <p class="split-body">
+          Serve the residents of Orange County through community policing, countywide patrols, and specialized units.
+        </p>
+        <a href="https://discord.gg/6qHNKswAQY" target="_blank" class="btn-primary">Join OCSO</a>
+      </div>
+      <div class="split-image">
+        <img src="/Orange-County-RolePlay-Website/images/ocso.png" alt="OCSO Vehicle">
+      </div>
+    </div>
 
-    document.querySelectorAll('a').forEach(link => {
-      const url = link.getAttribute('href');
-      if (!url || url.startsWith('#') || link.target === "_blank") return;
+    <!-- OCFR -->
+    <div class="split-grid reverse">
+      <div class="split-text">
+        <h2>Orange County Fire Rescue (OCFR)</h2>
+        <p class="split-body">
+          Respond to fires, medical emergencies, and rescue operations with elite training and real‑world accuracy.
+        </p>
+        <a href="https://discord.gg/6qHNKswAQY" target="_blank" class="btn-primary">Join OCFR</a>
+      </div>
+      <div class="split-image">
+        <img src="/Orange-County-RolePlay-Website/images/ocfr.png" alt="OCFR Vehicle">
+      </div>
+    </div>
 
-      link.addEventListener('click', e => {
-        e.preventDefault();
-        document.body.style.opacity = 0;
-        setTimeout(() => {
-          window.location.href = url;
-        }, 200);
-      });
-    });
-  </script>
+    <!-- FDOT -->
+    <div class="split-grid">
+      <div class="split-text">
+        <h2>Florida Department of Transportation (FDOT)</h2>
+        <p class="split-body">
+          Keep Florida’s roads safe with traffic management, incident response, and roadway hazard mitigation.
+        </p>
+        <a href="https://discord.gg/6qHNKswAQY" target="_blank" class="btn-primary">Join FDOT</a>
+      </div>
+      <div class="split-image">
+        <img src="/Orange-County-RolePlay-Website/images/fdot.png" alt="FDOT Vehicle">
+      </div>
+    </div>
 
-</body>
-</html>
+  </div>
+</section>
+
