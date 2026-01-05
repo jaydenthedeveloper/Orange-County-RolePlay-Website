@@ -410,6 +410,64 @@ section {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+/* DEPARTMENTS GRID */
+.departments {
+  padding: 80px 0;
+  background: #050507;
+  text-align: center;
+}
+
+.departments h2 {
+  font-size: 28px;
+  color: #ffffff;
+}
+
+.dept-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.dept-card {
+  background: #101018;
+  border: 1px solid #1f1f2b;
+  border-radius: 12px;
+  padding: 18px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dept-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  border: 1px solid #2a2a38;
+}
+
+.dept-card h3 {
+  font-size: 16px;
+  color: #ffb04d;
+  margin-bottom: 8px;
+}
+
+.dept-text {
+  font-size: 13px;
+  color: #c8c8d8;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.dept-btn {
+  width: 100%;
+  text-align: center;
+  margin-top: auto;
+}
+
 
 
 
