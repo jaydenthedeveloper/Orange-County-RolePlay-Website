@@ -197,6 +197,19 @@ section {
   gap: 14px;
 }
 
+@media (max-width: 900px) {
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 .feature-card {
   background: #101018;
   border-radius: 10px;
@@ -518,4 +531,5 @@ section {
   object-fit: cover;
   max-height: 500px;
 }
+
 
