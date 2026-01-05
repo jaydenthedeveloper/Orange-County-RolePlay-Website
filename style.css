@@ -348,7 +348,7 @@ section {
   padding: 0 20px;
 
   display: flex;
-  justify-content: space-between; /* LEFT + RIGHT */
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -361,21 +361,24 @@ section {
 .discord-icon:hover {
   opacity: 1;
 }
-/* ABOUT SPLIT SECTIONS */
+
+/* ABOUT SPLIT SECTIONS — UPDATED SPACING */
 .about-split {
-  padding: 80px 0;
+  padding: 40px 0; /* reduced from 80px */
   background: #050507;
 }
 
 .split-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 30px; /* reduced from 40px */
   align-items: center;
+  margin-bottom: 40px; /* added to tighten spacing */
 }
 
 .split-grid.reverse {
   direction: rtl;
+  margin-bottom: 40px;
 }
 
 .split-grid.reverse > * {
@@ -397,10 +400,13 @@ section {
 
 .split-image img {
   width: 100%;
+  max-height: 350px; /* reduced height */
+  object-fit: cover;
   border-radius: 12px;
   border: 1px solid #1f1f2b;
   background: #0a0a0d;
 }
+
 /* PAGE TRANSITION */
 .fade-in {
   animation: fadeIn 0.4s ease forwards;
@@ -410,6 +416,7 @@ section {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
 /* DEPARTMENTS GRID */
 .departments {
   padding: 80px 0;
@@ -467,6 +474,8 @@ section {
   text-align: center;
   margin-top: auto;
 }
+
+/* FULLSCREEN DEPT (unused now but kept for safety) */
 .departments-showcase {
   padding: 0;
 }
@@ -509,9 +518,3 @@ section {
   object-fit: cover;
   max-height: 500px;
 }
-
-
-
-
-
-
